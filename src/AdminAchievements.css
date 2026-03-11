@@ -1,0 +1,176 @@
+/* ===========================
+   MAIN CONTAINER
+=========================== */
+.achievements-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #ffffff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* ===========================
+   TITLE
+=========================== */
+.achievements-container h2 {
+  font-size: 26px;
+  color: #08c9b6;
+  margin-bottom: 15px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.12);
+}
+
+/* ===========================
+   BACK BUTTON
+=========================== */
+.achievements-container .back-button {
+  background: #08c9b6;
+  color: white;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+  transition: 0.2s ease;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 10px rgba(8, 201, 182, 0.4);
+}
+
+.achievements-container .back-button:hover {
+  background: #06a696;
+}
+
+/* ===========================
+   TAB CONTAINER
+=========================== */
+.post-type-tab-container {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+}
+
+/* ===========================
+   TAB BUTTON
+=========================== */
+.tab-button {
+  background: #e6f9f7;
+  border: 2px solid #08c9b6;
+  color: #06a696;
+  padding: 10px 16px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.tab-button:hover {
+  background: #08c9b6;
+  color: white;
+}
+
+/* ===========================
+   ACTIVE TAB
+=========================== */
+.active-tab {
+  background: #08c9b6;
+  color: white;
+  box-shadow: 0 4px 10px rgba(8, 201, 182, 0.4);
+}
+
+/* ===========================
+   TAB BADGE
+=========================== */
+.tab-badge {
+  /* background: white; */
+  color: white;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+/* ===========================
+   GRID LIST
+=========================== */
+.adopted-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 20px;
+  margin-top: 10px;
+}
+
+/* ===========================
+   CARD DESIGN
+=========================== */
+.adopted-card {
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+  transition: transform 0.2s ease;
+  border-top: 4px solid #08c9b6;
+}
+
+.adopted-card:hover {
+  transform: translateY(-4px);
+}
+
+/* ===========================
+   CARD IMAGE
+=========================== */
+.adopted-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+/* ===========================
+   CARD TEXT
+=========================== */
+.adopted-card h4 {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #08c9b6;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.12);
+}
+
+.adopted-card p {
+  color: #444;
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+/* ===========================
+   ERROR MESSAGE
+=========================== */
+.error {
+  color: red;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+@media (max-width: 480px) {
+  .achievements-container {
+    padding: 15px;
+  }
+
+  .tab-button {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .adopted-card img {
+    height: 160px;
+  }
+}

@@ -1,0 +1,251 @@
+/* ===========================
+   MAIN CONTAINER
+=========================== */
+.profile-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 25px;
+  background-color: #ffffff;
+  border-radius: 0px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  box-sizing: border-box;
+  text-align: center;
+}
+
+/* ===========================
+   HEADINGS
+=========================== */
+.profile-container h2 {
+  color: #08c9b6;
+  font-size: 30px;
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+}
+
+.profile-container h3 {
+  color: #06a696;
+  font-size: 22px;
+  margin-top: 25px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.profile-container h4 {
+  color: #08c9b6;
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+/* ===========================
+   USER INFO
+=========================== */
+.profile-container p {
+  font-size: 15px;
+  color: #444;
+  margin: 5px 0;
+}
+
+/* ===========================
+   BACK BUTTON
+=========================== */
+.profile-container .back-button {
+  background-color: #08c9b6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 18px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 15px;
+  box-shadow: 0 3px 10px rgba(8, 201, 182, 0.4);
+  transition: all 0.2s ease;
+}
+
+.profile-container .back-button:hover {
+  background-color: #06a696;
+}
+
+/* ===========================
+   TAB BUTTON CONTAINER
+=========================== */
+.post-type-tab-container {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+/* ===========================
+   TAB BUTTONS
+=========================== */
+.tab-button {
+  background-color: white;
+  color: #08c9b6;
+  border: 2px solid #08c9b6;
+  padding: 10px 22px;
+  border-radius: 30px;
+  font-size: 15px;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 3px 10px rgba(8, 201, 182, 0.25);
+  transition: all 0.25s ease;
+}
+
+.tab-button:hover {
+  background-color: #08c9b6;
+  color: white;
+}
+
+/* Active tab */
+.active-tab {
+  background-color: #08c9b6;
+  color: white;
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(8, 201, 182, 0.35);
+}
+
+/* ===========================
+   STATUS MESSAGES
+=========================== */
+.profile-container .status-message {
+  color: #06a696;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+/* ===========================
+   ANIMAL LIST GRID
+=========================== */
+.profile-container .animal-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* ===========================
+   ANIMAL CARD
+=========================== */
+.profile-container .animal-card {
+  background-color: #ffffff;
+  border-top: 4px solid #08c9b6;
+  border-radius: 12px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+  transition: transform 0.2s ease;
+}
+
+.profile-container .animal-card:hover {
+  transform: translateY(-5px);
+}
+
+/* ===========================
+   ANIMAL IMAGE
+=========================== */
+.profile-container .animal-card .animal-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+/* ===========================
+   CARD TEXT
+=========================== */
+.profile-container .animal-card p {
+  color: #444;
+  font-size: 14px;
+  margin: 3px 0;
+}
+
+/* ===========================
+   ADOPTED BADGE
+=========================== */
+.profile-container .adopted-badge {
+  display: inline-block;
+  background-color: #08c9b6;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-weight: bold;
+  box-shadow: 0 3px 10px rgba(8, 201, 182, 0.4);
+}
+
+/* ===========================
+   ACTION BUTTONS
+=========================== */
+.profile-container .delete-button,
+.profile-container .mark-button {
+  width: 85%;
+  padding: 10px 0;
+  border: none;
+  border-radius: 8px;
+  margin-top: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 15px;
+  transition: all 0.2s ease;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Delete Button */
+.profile-container .delete-button {
+  background-color: #ff5252;
+  color: white;
+}
+
+.profile-container .delete-button:hover {
+  background-color: #e33e3e;
+}
+
+/* Mark as Adopted Button */
+.profile-container .mark-button {
+  background-color: #08c9b6;
+  color: white;
+}
+
+.profile-container .mark-button:hover {
+  background-color: #06a696;
+}
+
+/* ===========================
+   RESPONSIVENESS
+=========================== */
+@media (max-width: 480px) {
+  .profile-container {
+    padding: 15px;
+  }
+
+  .post-type-tab-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .tab-button {
+    width: 100%;
+  }
+
+  .profile-container h2 {
+    font-size: 26px;
+  }
+
+  .profile-container h3 {
+    font-size: 20px;
+  }
+
+  .profile-container .back-button {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .profile-container .animal-card .animal-image {
+    height: 160px;
+  }
+
+  .profile-container .delete-button,
+  .profile-container .mark-button {
+    width: 100%;
+    font-size: 14px;
+  }
+}

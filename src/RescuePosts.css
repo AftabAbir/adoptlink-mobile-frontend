@@ -1,0 +1,267 @@
+/* ===========================
+   MAIN CONTAINER
+=========================== */
+.rescue-posts-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #ffffff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* ===========================
+   TITLES
+=========================== */
+.rescue-posts-container h2 {
+  color: #06a696;
+  font-size: 26px;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.12);
+}
+
+/* ===========================
+   BACK BUTTON
+=========================== */
+/* .rescue-posts-container .back-button {
+  background: #08c9b6;
+  color: white;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+  transition: 0.2s ease;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 10px rgba(8, 201, 182, 0.4);
+}
+
+.back-button:hover {
+  background: #06a696;
+} */
+
+
+.rescue-posts-container .back-button {
+  background: #08c9b6;
+  color: white;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+  transition: 0.2s ease;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 10px rgba(8, 201, 182, 0.4);
+}
+
+.rescue-posts-container .back-button:hover {
+  background: #06a696;
+}
+
+
+/* ===========================
+   TABS (PENDING / ACCEPTED)
+=========================== */
+/* .rescue-tabs {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 14px;
+  margin: 20px 0;
+} */
+
+/* .tab-btn {
+  padding: 9px 18px;
+  border: none;
+  border-radius: 20px;
+  background-color: #e0f7f4;
+  color: #06a696;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+
+.tab-btn:hover {
+  background-color: #c6f1eb;
+}
+
+.tab-btn.active {
+  background-color: #08c9b6;
+  color: white;
+  box-shadow: 0 4px 12px rgba(8, 201, 182, 0.5);
+} */
+
+.rescue-tabs {
+  display: flex;
+  gap: 12px;
+  margin: 20px 0;
+  justify-content: center;
+}
+
+.tab-btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 20px;
+  background-color: #e0f7f4;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.tab-btn.active {
+  background-color: #08c9b6;
+  color: white;
+}
+
+
+/* ===========================
+   RESCUE CARDS GRID
+=========================== */
+.rescue-posts-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 20px;
+  margin-top: 15px;
+}
+
+/* ===========================
+   CARD DESIGN
+=========================== */
+.rescue-card {
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+  transition: transform 0.2s ease;
+  border-top: 4px solid #08c9b6;
+}
+
+.rescue-card:hover {
+  transform: translateY(-4px);
+}
+
+/* ===========================
+   ANIMAL IMAGE
+=========================== */
+.animal-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+/* ===========================
+   TEXT INSIDE CARD
+=========================== */
+.rescue-card h3 {
+  margin-top: 10px;
+  font-size: 20px;
+  color: #08c9b6;
+}
+
+.rescue-card p {
+  color: #444;
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+/* ===========================
+   POST TIME
+=========================== */
+.post-time {
+  font-size: 13px;
+  color: #777;
+  margin: 6px 0;
+  font-style: italic;
+}
+
+/* ===========================
+   MAP LINK
+=========================== */
+.rescue-card a {
+  display: inline-block;
+  margin: 10px 0;
+  text-decoration: none;
+  color: #06a696;
+  font-weight: bold;
+}
+
+.rescue-card a:hover {
+  text-decoration: underline;
+}
+
+/* ===========================
+   ACTION BUTTONS
+=========================== */
+.accept-btn,
+.rescued-btn {
+  width: 85%;
+  padding: 10px 0;
+  margin-top: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 15px;
+  transition: all 0.2s ease;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* ACCEPT BUTTON */
+.accept-btn {
+  background-color: #08c9b6;
+  color: white;
+}
+
+.accept-btn:hover {
+  background-color: #06a696;
+}
+
+/* RESCUED BUTTON */
+.rescued-btn {
+  background-color: #34a853;
+  color: white;
+}
+
+.rescued-btn:hover {
+  background-color: #2e8b57;
+}
+
+/* ===========================
+   ERROR MESSAGE
+=========================== */
+.error {
+  color: red;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+/* ===========================
+   RESPONSIVENESS
+=========================== */
+@media (max-width: 480px) {
+  .rescue-posts-container {
+    padding: 15px;
+  }
+
+  .rescue-posts-container h2 {
+    font-size: 22px;
+  }
+
+  .back-button {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .animal-image {
+    height: 160px;
+  }
+
+  .rescue-tabs {
+    flex-direction: column;
+    align-items: center;
+  }
+}

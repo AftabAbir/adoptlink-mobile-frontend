@@ -1,0 +1,48 @@
+/* src/ViewAllUsers.css */
+.view-users-container {
+  padding: 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.user-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.user-card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.back-button {
+  margin-bottom: 15px;
+  padding: 8px 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.back-button:hover {
+  background-color: #0056b3;
+}
+
+.status-button{
+  background-color: crimson;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.status-button:hover{
+  background-color: darkred;
+}
